@@ -25,7 +25,64 @@
     </header> 
                 <!-- awal main -->
     <main>     
-        <h2><em>coming soon</em></h2>
+        <h2><em>ajukan layanan akademik</em></h2>
+        <form action="#" method="post" target="_self" class="form-card">
+             <fieldset> 
+                <legend>Data Pengajuan</legend>
+                 <!--nama  -->
+                 <div class="form-group">
+                    <label for="namalengkap">nama lengkap</label>
+                    <input type="text" id="namalegkap" name="namalengkap" placeholder="masukkan nama ...">
+                </div>
+                <!-- nim dan prodi -->
+                <div class="form-row">
+                 <!-- nim -->
+                 <div class="form-group">
+                    
+                     <label for="nim">NIM</label>
+                     <input type="text" id="nim" name="nim" placeholder="contoh 21113564" required>
+                 </div>
+                 <!-- prodi -->
+                  <div>
+                    <label for="prodi">program studi</label>
+                    <select id="prodi" name="prodi" required>
+                        <option value="">- pilih program studi -</option>
+                        <option value="sistem informasi">sistem informasi</option>
+                        <option value="tehnik informatika">tehnik informatika</option>
+                        <option value="manajemen">manajemen</option>
+                        <option value="akutansi ">akutansi</option>
+                    </select>
+                  </div>
+                  <!-- layanan dan tangal -->
+                   <div class="form-row">
+                    <!-- layanan -->
+                    <div class="form-group">
+                        <label for="layanan">Jenis Layanan</label> 
+                    <select id="layanan" name="layanan" required> 
+                        <option value="">- Pilih Layanan -</option> 
+                        <option value="SKA">SKA — Surat Aktif Kuliah</option> 
+                        <option value="CAK">CAK — Cuti Akademik</option> 
+                        <option value="TNM">TNM — Transkrip Nilai</option> 
+                        <option value="PDA">PDA — Perubahan Data</option> 
+                     </select>
+                        </div>
+                        <!-- tanggal -->
+                         <div class="form-group">
+                            <label for="tanggal">Tanggal Pengajuan</label> 
+                            <input type="date" id="tanggal" name="tanggal" required>
+                         </div>
+                         <!-- keterangan -->
+                        <div class="form-group"> 
+                            <label for="keterangan">Keterangan (opsional)</label> 
+                            <textarea id="keterangan" name="keterangan" rows="3" placeholder="Jelaskan alasan pengajuan Anda..."></textarea> 
+                        </div>
+                        <!-- tombol kiim dan reset -->
+                        <div class="form-actions"> 
+                            <input type="submit" name="submit" value="🚀 Ajukan Sekarang" class="btn btn-primary"></input> 
+                            <button type="reset" name="Reset" class="btn btn-outline">↺ Reset</button> 
+                        </div> 
+            </fieldset>
+        </form>
     </main>
     <hr>
     <!-- akhir main -->
