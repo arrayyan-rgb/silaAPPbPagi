@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="Angka1" placeholder="masukkan angka pertama ...">
+    <input type="text" id="Angka2" placeholder="masukkan angka kedua ...">
+    <button onclick="greet()">send</button>
+    <div id="output"></div>
+
+
+    <script>
+        function greet(){
+            let inputan = document.getElementById("nama").value;
+            // let nama = inputan.value;
+            let hasil = document.getElementById("output").innerHTML = "hello " + inputan + " WELCOME" 
+        }
+        // let name =prompt("masukkan nama anda");
+        // alert("hello " + name +", WELCOME !")
+    
+        function greet(){
+            let angka1= Number.getElementById("Angka1");
+            let angka2= Number(document.getElementById("Angka2"));
+            let tambah=angka1 + angka2
+            let hasil = document.getElementById("output").innerHTML = angka1 + ' + ' + angka2 + ' =' + tambah
+            
+        }
+
+
+        // let bil = Number(prompt("Masukkan sebuah angka!"))
+        // if (bil % 2 === 0){
+        //     alert(bil + ' adalah bilangan genap')
+        // }
+        // else{
+        //     alert(bil + ' adalah bilangan ganjil')
+        // }
+    </script>
+    
+</body>
+</html>

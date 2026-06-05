@@ -208,6 +208,7 @@ nav a :hover nav a .active {
    font-size: 1.25rem;
    font-weight: 700;
    color: #f1f5f9;
+   text-align: left;
 }
 
 /* hero section */
@@ -588,3 +589,50 @@ input[type="date"]{
    border: 2px solid #334155;
    background: none;
 }
+
+
+/* M11-tables */
+
+.data-table{
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 16px;
+   min-width: 600px;
+}
+
+.data-table caption{
+   text-align: left;
+   font-size: 0,85rem;
+   color: #64748b;
+   margin-bottom: 12px;
+
+}
+
+.data-table th, .data-table td{
+   border-bottom: 1px solid #334155;
+   padding: 12px 16px;
+   text-align: left;
+}
+
+.data-table th{
+   background-color: #05467c;
+   color: #f1f5f9;
+   font-size: 0.85rem;
+   font-weight: 700;
+   letter-spacing: 0.5px;
+   text-transform: uppercase;
+}
+
+.data-table td{
+   color: #94a3b8;
+   font-size: 0.9rem;
+}
+
+.data-table tbody tr:nth-child(even) {
+   background-color: #2d3d6657;
+}
+
+.data-table tbody tr:hover{
+   background-color: #405b71;
+}
+

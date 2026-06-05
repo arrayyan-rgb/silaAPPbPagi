@@ -13,21 +13,77 @@
 
 <body>
     <!-- header -->
-    <header>
-        <h1>🎓 SILA</h1>
-        <p>Sistem Informasi Layanan Akademik</p>
-        <nav>
-             <ul class="nav-menu">
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="logo">🎓 SILA </a>
+            <input type="checkbox" id="navToggle" class="nav-Toggle">
+            <label for="navToggle" class="navToggleMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul class="nav-menu">
                     <li><A href="index.html" class='active'>beranda</A></li>
                     <li><A href="layanan.html">ajukan layanan</A></li>
                     <li><A href="riwayat.html">riwayat</A></li>
                 </ul>
-        </nav>
-        <hr> <!-- Garis Mendatar -->
+            </nav>
+
+        </div> <!-- Garis Mendatar -->
     </header>
+    
     <!-- awal main -->
     <main>
-        <h2><em>coming soon</em></h2>
+        <table class="data-table">
+            <caption>Data pengajuan layanan akademik</caption>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Nim</th>
+                    <th>LayaNAN</th>
+                    <th>TangGAL</th>
+                    <th>staTUS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>bento</td>
+                    <td>2341567</td>
+                    <td>CAK</td>
+                    <td>22 mei 2026</td>
+                    <td>selesai</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>berto</td>
+                    <td>2341578</td>
+                    <td>TNM</td>
+                    <td>24 mei 2026</td>
+                    <td>proses</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>valento</td>
+                    <td>234152</td>
+                    <td>CAK</td>
+                    <td>30 juni 2026</td>
+                    <td>selesai</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>ripto</td>
+                    <td>2341097</td>
+                    <td>CAK</td>
+                    <td>12 agustus 2026</td>
+                    <td>selesai</td>
+                </tr>
+
+            </tbody>
+        </table>
+
     </main>
     <hr>
     <!-- akhir main -->
@@ -41,6 +97,7 @@
         </p>
         <p>&copy; 2026 SILA — Dibuat untuk tugas Pemrograman Web</p>
     </footer>
+    <script src="js/new.js"></script>
 </body>
 
 </html>
